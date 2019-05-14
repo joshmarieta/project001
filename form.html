@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>forms</title>
+        <style>
+                input[type=text]{
+                    background-color: aliceblue;
+                }
+                button {
+                    width: 200px;
+                    height: 50px;
+                    font-size: 24px;
+                    background-color: green; 
+                }
+                button:hover{
+                    background-color: blue;
+                }
+                a::before{
+                    content: "this is ";
+                    font-weight: bold;
+                }
+                p::selection{
+                    color: blue;
+                    background-color: green; 
+
+                }
+            </style>
+    </head>
+    <body>
+            <form>
+                <div>
+                <input name="name" type="text" placeholder="Name">
+                <input name="password" type="password" placeholder="password">
+                </div>
+                <div>
+                    favourite color?
+                    <input name="color" type="radio" value="red">Red
+                    <input name="color" type="radio" value="pink">pink
+                    <input name="color" type="radio" value="white">white
+                    <input name="color" type="radio" value="other">other
+                </div>
+                <div>
+                    <input name="country" list="countires" placeholder="Country">
+                    <datalist id="countries">
+                        <option value="kuwait">
+                        <option value="kuwait">
+                        <option value="cameroon">
+                        </option>
+                    </datalist>
+                </div>
+            </form>
+        <div>
+            <li><a href="#">one link</a></li>
+            <li><a href="#">second link</a></li>
+            <li><a href="#">third link</a></li>
+        </div>
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.    
+        </p>
+        <button>click me!</button>
+    </body>
+</html>

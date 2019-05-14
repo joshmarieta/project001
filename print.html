@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>media querry</title>
+        <style>
+            @media print{
+                .screen-only{
+                    display: none;
+                }
+            }
+            @media (min-width: 500px){
+                body{
+                    background-color: blue;
+                }
+            }
+            @media (max-width: 499px){
+                body{
+                    background-color: red;
+                }
+            }
+            @media (max-width: 499px){
+                h1::before{
+                    content:welcome;
+                }
+            }
+            @media (min-width: 500px){
+                h1::before{
+                    content: welcome to my;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>this is line one </p>
+        <p>this is the second line</p>
+        <p class="screen-only">this line will not appear when printed</p>
+        <h1></h1>
+    </body>
+</html>
